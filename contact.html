@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Angela Ruslander">
+    <meta name="description" content="Contact Me Page">
+    <title>Contact</title>
+    <meta name="referrer" content="origin" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+    div, button {
+        max-width: 50%;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 25px;
+    }
+</style>
+</head>
+<body>
+
+    <h1>Contact Me!</h1>
+
+<form role="form" action="http://formspree.io/mrbllejd" method="POST">
+    <input type="hidden" name="_next" value="//site.io/thanks.html" />
+          <input type="hidden" name="_subject" value="New submission!" />
+          <input type="text" name="_gotcha" style="display:none" />
+<div class="mb-3">
+  <label for="yourName" class="form-label">Your Name</label>
+  <input type="text" class="form-control" name="yourName" id="yourName" placeholder="Jane Doe">
+</div>  
+<div class="mb-3">
+  <label for="email" class="form-label">Email address</label>
+  <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="textArea" class="form-label">Message</label>
+  <textarea class="form-control" name="message"id="textArea" rows="3"></textarea>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+ 
+</body>
+</html>
